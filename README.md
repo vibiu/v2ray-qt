@@ -17,14 +17,17 @@ windeployqt v2ray-qt5.exe
 # 程序运行效果:
 
 右下角 windows 图标:
-[!systray.png](http://vibiu.cn/static/systray.png)
+[!systray.png](https://github.com/vibiu/v2ray-qt/blob/master/resourse/systray.png)
 
 菜单栏:
-[!menu.png](http://vibiu.cn/static/menu.png)
+[!menu.png](https://github.com/vibiu/v2ray-qt/blob/master/resourse/menu.png)
 
 其中`Enable Proxy/DisableProxy` 表示启用禁用代理. `Proxy Mode`表示代理模式, 分别有`PAC Mode`和`Global Mode`, 分别代表使用 PAC 文件过滤 URL 和 不过滤 URL, 直接全局使用代理. `Restore`表示重新打开程序主窗口, 目前配置的部分未有实现, 是空的窗口. `Quit`表示推出程序, 会关闭已经启用的代理.
 
 # 项目结构:
 
-`release`有已经打包好的程序, 可以使用.
+`resource`是程序截图.
 `src`是项目源码.
+
+# 尝试使用:
+从[release](https://github.com/vibiu/v2ray-qt/releases/tag/v0.1.0)中下载试用.
