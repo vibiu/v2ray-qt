@@ -1,0 +1,27 @@
+{
+  "inbound": {
+    "port": 1090, // 监听端口
+    "protocol": "http", // 入口协议为 SOCKS 5 或者 HTTP
+    "domainOverride": ["tls","http"],
+    "settings": {
+      "auth": "noauth"  //socks的认证设置，noauth 代表不认证，由于 socks 通常在客户端使用，所以这里不认证
+    }
+  },
+  "outbound": {
+    "protocol": "vmess", // 出口协议, 这里用 v2ray 的专有协议 vmess
+    "settings": {
+      "vnext": [
+        {
+          "address": "104.225.150.104", // 服务器地址，请修改为你自己的服务器 ip 或域名
+          "port": 1090,  // 服务器端口
+          "users": [
+            {
+              "id": "ad775808-815e-5063-1951-632a110b2ae3",  // 用户 ID，必须与服务器端配置相同
+              "alterId": 64 // 此处的值也应当与服务器相同
+            }
+          ]
+        }
+      ]
+    }
+  }
+}
